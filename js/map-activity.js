@@ -12,6 +12,7 @@ function initMap() {
     zoom: 10,
     zoomControl: true, // Set to false to remove +/i buttons
     dragging: true
+	}
 	
     // Initialize map centered on world
     map = L.map('map',mapOptions);
