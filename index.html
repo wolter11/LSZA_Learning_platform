@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Leaflet CSS for map activity -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <nav>
+        <h1>EduLearn</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="airplanes.html">Airplanes</a></li>
+        </ul>
+        <button class="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    <div class="container">
+        <header style="margin-bottom: 2rem;">
+            <h2>Welcome Back!</h2>
+            <p style="color: var(--text-muted);">Select an activity to start learning.</p>
+        </header>
+
+        <div class="dashboard">
+            <!-- Map Activity Card -->
+            <div class="card">
+                <div>
+                    <h2>🌍 Geography Map</h2>
+                    <p>Test your knowledge of world geography by clicking on the correct location on the interactive map.</p>
+                </div>
+                <a href="map.html" class="btn">Start Map Challenge</a>
+            </div>
+
+            <!-- Quiz Activity Card -->
+            <div class="card">
+                <div>
+                    <h2>❓ General Quiz</h2>
+                    <p>Answer multiple-choice questions across various topics. Track your progress and learn from explanations.</p>
+                </div>
+                <a href="quiz.html" class="btn">Start Quiz</a>
+            </div>
+
+            <!-- Airplane Activity Card -->
+            <div class="card">
+                <div>
+                    <h2>✈️ Plane Spotter</h2>
+                    <p>Identify famous aircraft from images. Learn about aviation history and models.</p>
+                </div>
+                <a href="airplanes.html" class="btn">Start Recognition</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

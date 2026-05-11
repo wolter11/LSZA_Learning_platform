@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Activity - EduLearn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <nav>
+        <h1>EduLearn</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="airplanes.html">Airplanes</a></li>
+        </ul>
+        <button class="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    <div class="container">
+        <div class="activity-wrapper fade-in">
+            <div class="score-board">
+                <span>Score: <span id="score-display">0</span></span>
+                <span>Target: <span id="target-name">Loading...</span></span>
+            </div>
+            
+            <div id="map"></div>
+            <div id="feedback" style="text-align: center; margin-top: 1rem; font-weight: bold; min-height: 1.5rem;"></div>
+            <button id="next-btn" class="btn" style="width: auto; display: none; margin: 1rem auto;">Next Location</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data/content.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/map-activity.js"></script>
+</body>
+</html>

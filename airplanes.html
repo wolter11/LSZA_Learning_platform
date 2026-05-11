@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Spotter - EduLearn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h1>EduLearn</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="airplanes.html">Airplanes</a></li>
+        </ul>
+        <button class="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    <div class="container">
+        <div class="activity-wrapper fade-in">
+            <div class="score-board">
+                <span>Score: <span id="plane-score">0</span></span>
+                <span>Round: <span id="plane-round">1</span>/<span id="plane-total">3</span></span>
+            </div>
+
+            <div id="plane-container">
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <img id="plane-img" src="" alt="Airplane" style="max-width: 100%; max-height: 300px; border-radius: 8px; object-fit: contain;">
+                </div>
+                <div class="options-grid" id="plane-options">
+                    <!-- Options injected here -->
+                </div>
+                <div class="explanation" id="plane-explanation"></div>
+                <button id="next-plane-btn" class="btn" style="margin-top: 1rem; display: none;">Next Plane</button>
+            </div>
+
+            <div id="plane-results" style="display: none; text-align: center;">
+                <h2>Spotter Complete!</h2>
+                <p>Final Score: <span id="plane-final-score">0</span></p>
+                <button class="btn" onclick="location.reload()">Restart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/content.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/airplane-activity.js"></script>
+</body>
+</html>

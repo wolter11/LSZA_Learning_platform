@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - EduLearn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <h1>EduLearn</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="airplanes.html">Airplanes</a></li>
+        </ul>
+        <button class="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    <div class="container">
+        <div class="activity-wrapper fade-in">
+            <div class="score-board">
+                <span>Score: <span id="quiz-score">0</span></span>
+                <span>Question: <span id="q-current">1</span>/<span id="q-total">3</span></span>
+            </div>
+
+            <div id="quiz-container">
+                <div class="question-box" id="question-text">Loading...</div>
+                <div class="options-grid" id="options-container">
+                    <!-- Options injected here -->
+                </div>
+                <div class="explanation" id="explanation"></div>
+                <button id="next-q-btn" class="btn" style="margin-top: 1rem; display: none;">Next Question</button>
+            </div>
+
+            <div id="results-container" style="display: none; text-align: center;">
+                <h2>Quiz Completed!</h2>
+                <p style="font-size: 1.5rem; margin: 1rem 0;">Final Score: <span id="final-score">0</span></p>
+                <button class="btn" onclick="location.reload()">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/content.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/quiz-activity.js"></script>
+</body>
+</html>
