@@ -5,8 +5,16 @@ let score = 0;
 let isRoundActive = false;
 
 function initMap() {
+	
+	// Map options
+	let mapOptions = {
+    center: [46.002171, 8.907756],
+    zoom: 10,
+    zoomControl: true, // Set to false to remove +/i buttons
+    dragging: true
+	
     // Initialize map centered on world
-    map = L.map('map').setView([20, 0], 2);
+    map = L.map('map',mapOptions);
     
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
