@@ -22,6 +22,10 @@ function initMap() {
         subdomains: 'abcd',
         maxZoom: 19
     }).addTo(map);
+	
+	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+	}).addTo(map);
 
     // Handle map click
     map.on('click', handleMapClick);
